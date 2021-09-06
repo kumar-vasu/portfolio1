@@ -142,7 +142,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 140px;
 }
 
 .nav {
@@ -295,9 +295,10 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
+    background-image: url(../img/minimal_vector_tech_computer_dogs_humor_funny_cartoon_2560x1440.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    /* background-blend-mode: multiply; */
+    background-blend-mode: overlay;
     color: var(--clr-light);
     text-align: center;
 }
@@ -392,6 +393,7 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 155px;
 }
 
 .portfolio__item {
@@ -460,4 +462,29 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio__files__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+    text-decoration: none;
+}
+
+.portfolio__files__link:hover {
+    color: var(--clr-accent);
 }
